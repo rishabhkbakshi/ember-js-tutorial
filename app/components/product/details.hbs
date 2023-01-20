@@ -1,5 +1,6 @@
 <div class='product-details'>
-  {{! header }}
+
+  {{! Header }}
   <section>
     <h3>Beats Solo Wireless Headphones</h3>
     <div class='text-warning'>
@@ -11,9 +12,23 @@
     </div>
   </section>
 
-  {{! price }}
+  {{! Price }}
   <section>
-    <del class='small text-black-o'>₹199.95</del>
-    <i class='text-danger font-weight-bold'>₹99.28</i>
+    <del class='small text-black-50'>$199.95</del>
+    <i class='text-danger font-weight-bold'>$99.98</i>
   </section>
+
+  <div>
+    <h5>Color</h5>
+    <div class='product-colors active-{{@color}}'>
+      <span
+        class='product-color color-red'
+        {{on 'click' (fn @onChangeColor 'red')}}
+      ></span>
+      <span
+        class='product-color color-black'
+        {{on 'click' (fn @onChangeColor 'black')}}
+      ></span>
+    </div>
+  </div>
 </div>
