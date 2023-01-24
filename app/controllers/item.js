@@ -4,6 +4,7 @@ import { action } from '@ember/object';
 
 export default class ItemController extends Controller {
   @tracked color = this.model.colors[0].color;
+
   @tracked isZoomed = false;
 
   get productImage() {

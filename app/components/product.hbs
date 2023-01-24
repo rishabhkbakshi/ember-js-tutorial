@@ -1,7 +1,7 @@
-{{!-- <n1>Number: {{this.number}}</n1>
-<button type='button' {{on 'click' this.addNumber}}>Add</button> --}}
-
-<LinkTo @route='item' @model={{@product.id}} class='product'>
-  <Product::Image @src={{this.productImage}} />
-  <Product::Details @name={{@product.name}} @price={{@product.price}} />
+<LinkTo @route="item" @model={{@product.id}} class="product">
+  <Product::Image @src={{this.productImage}}/>
+  <Product::Details
+    @name={{@product.name}}
+    @price={{@product.price}}
+  />
 </LinkTo>
